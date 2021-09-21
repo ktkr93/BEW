@@ -1,0 +1,184 @@
+/**
+ * ***************************************
+ * ページ全体に関わるCSSの設定
+ * ***************************************
+ */
+
+
+/* フォント */
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    /* Noto Sans JPのレギュラーウェイトを指定 */
+}
+
+
+/* おもな太字タグのフォントウェイト設定 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+strong {
+    font-weight: 700;
+}
+
+
+/* ベースのリンクカラー */
+
+a {
+    color: #f30;
+}
+
+
+/* レスポンシブイメージと画像下スペース防止 */
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    /* 画像下のスペースを消す */
+}
+
+.top h2 {
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+
+.top p {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+}
+
+
+/**
+ * ***************************************
+ * メインビジュアルコンテナ
+ * ***************************************
+ */
+
+.page-mv {
+    background-image: url(../images/MV.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.mv-container {
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+}
+
+.mv-container img {
+    margin: 30px 0 0 0;
+    width: 164px;
+}
+
+@media (min-width: 768px) {
+    .mv-container img {
+        width: 470px;
+    }
+}
+
+.mv-lead-vertical {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    -webkit-text-orientation: upright;
+}
+
+.mv-lead-combine {
+    font-size: 1.54rem;
+    -webkit-text-combine: horizontal;
+    -ms-text-combine-horizontal: all;
+    text-combine-upright: all;
+}
+
+
+/**
+ * ***************************************
+ * メインコンテナ
+ * ***************************************
+ */
+
+.top .page-main {
+    background-color: #000;
+}
+
+.top .main-container {
+    padding: 100px 4% 0 4%;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .top .main-container {
+        max-width: 840px;
+        margin: 0 auto;
+    }
+}
+
+.intro {
+    padding: 30px 0 0 0;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        font-size: 2.125rem;
+    }
+}
+
+.intro-enphasis-big {
+    color: #AF0000;
+    font-size: 1.42rem;
+}
+
+@media (min-width: 768px) {
+    .intro-enphasis-big {
+        font-size: 3.125rem;
+    }
+}
+
+.intro-lead {
+    line-height: 30px;
+}
+
+.intro-lead p {
+    padding: 30px 0 0 0;
+}
+
+
+/**
+ * ***************************************
+ * フッターコンテナ
+ * ***************************************
+ */
+
+.top footer {
+    background-color: #000;
+    padding: 100px 20px 30px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .top .footer-container {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+}
