@@ -155,7 +155,7 @@ header ul li {
     text-combine-upright: all;
     display: inline-block;
     padding-bottom: 6px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     letter-spacing: normal;
 }
 
@@ -298,6 +298,23 @@ header ul li {
 
 .news-item {
     margin-bottom: 30px;
+}
+
+.theater h2 {
+    margin-bottom: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%)
+}
+
+@media (min-width: 768px) {
+    iframe {
+        height: 400px;
+    }
 }
 
 
