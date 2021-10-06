@@ -126,40 +126,49 @@ header ul li {
 }
 
 .mv-lead-vertical {
+    /* 文字の向き（縦） */
     -ms-writing-mode: tb-rl;
+    -webkit-text-orientation: upright;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    -webkit-text-orientation: upright;
     width: 100%;
     padding: 0 20px 0 0;
-    align-content: flex-end;
+}
+
+.mv-lead-vertical p {
+    display: inline-block;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 6px;
 }
 
 @media (min-width: 768px) {
-    .mv-lead-vertical {
+    .mv-lead-vertical p {
         font-size: 1.2rem;
     }
 }
 
-.mv-lead-combine {
+.mv-lead-num {
+    /* 英数字の向き（縦中横） */
     -webkit-text-combine: horizontal;
     -ms-text-combine-horizontal: all;
+    -webkit-text-size-adjust: 100%;
     text-combine-upright: all;
-    padding: 0 0 6px 0;
-    font-size: 1.42rem;
+    display: inline-block;
+    padding-bottom: 6px;
+    font-size: 1.7rem;
+    letter-spacing: normal;
 }
 
 @media (min-width: 768px) {
-    .mv-lead-combine {
+    .mv-lead-num {
         font-size: 1.75rem;
     }
 }
 
 .mv-lead-enphasis-big {
     color: #AF0000;
-    font-size: 1.42rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -303,7 +312,7 @@ footer {
 }
 
 .footer-container {
-    padding: 100px 20px 30px 20px;
+    padding: 100px 20px 60px 20px;
     text-align: center;
     color: #fff;
 }
@@ -331,7 +340,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 15px;
-    column-gap: 10px;
+    column-gap: 30px;
 }
 
 @media (min-width: 768px) {
